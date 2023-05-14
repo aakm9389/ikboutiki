@@ -1,0 +1,138 @@
+<header>
+  <div class="header-container">
+        
+    <!-- ========================== MON COTE NAV ============================== -->
+
+    <!-- <div class="nav-click">
+    </div> -->
+
+    <!-- ========================== MON HEADER 02 ============================== -->
+
+    <div class="header-one">
+
+        <!-- niveau de mon contact de telephone et e-mail -->
+        <div class="contact-tel-mail">
+            <div class="contact-tel">
+                <i class="fa-solid fa-phone"></i>
+                <p>+223 00 00 00 00</p>
+            </div>
+            <div class="contact-mail">
+                <i class="fa-solid fa-envelope"></i>
+                <p>ikaboutiki@gmail.com</p>
+            </div>
+        </div>
+            <!-- niveau de mon reseau -->
+        <div class="reseau">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+            <!-- niveau de mon information -->
+        <div class="info">
+            <p>info</p>
+            <a href="#"><i class="fa-solid fa-circle-info"></i></a>
+        </div>
+
+    </div>
+
+
+       <!-- ========================== MON HEADER 02 ============================== -->
+
+       <div class="header-two">
+        <!-- niveau de mon logo -->
+        <div class="logo">
+            <span>IKA</span>
+            <h2>Boutiki</h2>
+        </div>
+        <!-- niveau de recherche -->
+        <div class="search">
+            <input type="text" placeholder="Recherche sur Ikaboutiki...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <!-- niveau de connexion -->
+        <div class="connect">
+            <a routerLink="/categorie-connexion">Connexion</a>
+        </div>
+        <!-- niveau de mon icon d'achât et panier et profils -->
+        <div class="achat-panier-users">
+            <a routerLink="/categorie-produit"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a routerLink="/categorie-produit"><i class="fa-solid fa-bag-shopping"></i></a>
+            <a routerLink="/categorie-utilisateur"><i class="fa-solid fa-user"></i></a>
+        </div>
+
+            
+        <!-- <div class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </div> -->
+
+    </div>
+
+    <!-- ========================== MON HEADER 03 ============================== -->
+
+    <div class="header-tree">
+
+        <!-- niveau de mon catégories --> 
+        <div class="categorie-produit">
+
+        <nav class="cate">
+
+            <label for="btn">Catégories
+            <span><i class="fa-solid fa-caret-down"></i></span>
+            </label>
+            <input type="checkbox" name="btn" id="btn">
+
+            <ul class="dropdom">
+            <li><a routerLink="/categorie-homme">Pour Hommes</a></li>
+            <li><a routerLink="/categorie-femme">Pour Femmes</a></li>
+            <li><a routerLink="/categorie-enfant">Pour Enfants</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- niveau de mon meilleures produit -->
+        <div class="produit">
+            <a routerLink="categorie-produit">Meilleures produit</a>
+        </div>
+        </div>
+
+        <!-- niveau de mon list a puce -->
+
+        <nav class="menu">
+            <ul class="list" [ngClass]="{'show' : visibility}">
+                <li><a routerLink="/categorie-accueil" (click) = "show()">Accueil</a></li>
+                <li><a routerLink="/categorie-apropos" (click) = "show()">A Propos</a></li>
+                <li><a routerLink="/categorie-produit" (click) = "show()">Produits</a></li>
+                <li><a routerLink="/categorie-service" (click) = "show()">Services</a></li>
+                <li><a routerLink="/categorie-contact" (click) = "show()">Contacts</a></li>
+            </ul>
+
+            <ul [ngClass]="{'show' : visibility}">
+                <li class="nav-close" (click)= "show()">
+                    <i class="fas fa-times"></i>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="nav-toggle" (click)= "show()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </div>
+
+</div>
+
+ <!-- ========================== SECTION DE MON FOND 1 IMAGE DE INFORMATION ============================== -->
+
+
+</header>
+
+<main style="height: auto; width: 100%;">
+
+    <router-outlet></router-outlet>
+
+</main>
+    
+
+<footer>
+    <app-footer></app-footer>
+</footer>

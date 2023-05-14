@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    font-family : 'Poppins', sans-serif ;
+}
+
+.ctnprincipale{
+    margin: 20px 25%;
+}
+
+.titre{
+    border: none;
+    border-bottom: 3px solid #FFC107;
+    width: 100%;
+}
+.titre h1{
+    text-align: center;
+    font-size: 24px;
+}
+
+fieldset{
+    width: 100%;
+    padding: 2% 5%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.input{
+    width: 250px;
+    height: 30px;
+    border:none;
+    border-bottom : 1px solid #183661;
+}
+table tr td {
+    padding-top: 10px;
+    padding-right: 20px;
+    font-size: 12px;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #183661;
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+    .titre h1{
+        font-size: 22px;   
+    }
+
+    .input{
+        width: 200px;
+    }
+    table tr td {
+        padding-right: 15px;
+        font-size: 11px;
+    }
+
+    button{
+        width: 90px;
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    
+    fieldset{
+        padding: 2% 5%;
+    }
+    .titre h1{
+        font-size: 20px;   
+    }
+
+    .input{
+        width: 170px;
+    }
+    table tr td {
+        padding-right: 12px;
+        font-size: 11px;
+    }
+
+    button{
+        width: 70px;
+        font-size: 10px;
+        height: 25px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .ctnprincipale{
+        margin: 10px 10%;
+    }
+
+    fieldset{
+        padding: 1% 10px;;
+    }
+    .titre h1{
+        font-size: 17px;   
+    }
+
+    .input{
+        width: 200px;
+    }
+    
+    table tr td {
+        padding-right: 7px;
+        font-size: 6px;
+    }
+
+    button{
+        width: 70px;
+        height: 20px;
+        font-size: 9px;
+    }
+}
+

@@ -1,0 +1,120 @@
+.tcon{
+    background-color: #dae4f0;
+    /* margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+form h1 {
+    font-size: 30px;
+    text-align: center;
+    
+}
+form span {
+    color: rgba(255, 193, 7, 1) ;
+}
+form .corps-formulaire {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    font-size: 20px;
+
+}
+form .corps-formulaire .boite {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+form .corps-formulaire .gauche .boite input {
+   margin-top: 5px;
+   padding: 10px 5px 10px 20px;
+   border: 1px solid black;
+   outline-color:rgba(255, 193, 7, 1) ; 
+   border-radius: 5px;
+}
+form .corps-formulaire .droite {
+    margin-left: 40px;
+}
+form .corps-formulaire .droite .boite {
+   
+    height: 100%;
+}
+form .corps-formulaire .droite .boite textarea{
+    margin-top: 5px;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid rgba(255, 193, 7, 1);
+    outline: none;
+    border-radius: 5px ;
+    resize: none;
+    height: 80%;
+}
+form .pied-formulaire button {
+    margin-top: 10px;
+    background-color: rgba(255, 193, 7, 1) ;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    outline: none;
+    font-weight: bold;
+    transition: transform 0.5s;
+}
+form .pied-formulaire button:hover {
+    transform: scale(1.05);
+}
+@media screen and (max-width:800px) {
+    /* form .corps-formulaire .droite {
+                margin-left: 0px;
+    }   
+    form {
+           margin: auto;    
+    } 
+
+    .tcon {
+        display: block!;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } */
+
+    .corps-formulaire {
+        flex-direction: column;
+    }
+
+    form .corps-formulaire .droite .boite textarea{
+        margin: 5px;
+        padding: 10px;
+        height: 80%;
+        width: 116%;
+    }
+    
+    .droite {
+        position: relative;
+        left: -40px
+    }
+
+    form h1 {
+        font-size: 20px;
+    }
+
+    form .corps-formulaire {
+        font-size: 12px;
+    
+    }
+}

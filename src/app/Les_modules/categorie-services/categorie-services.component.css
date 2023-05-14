@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    font-family : 'Poppins', sans-serif ;
+}
+
+.service {
+    background-color: #fff;
+    padding-top: 9px;
+}
+
+.sectionServ{
+    margin-bottom: 20px;
+    transition: 1.5s;
+}
+
+.sectionServ:hover .service_text{
+    background-color:#d3d2d2;
+    border-radius:5px;
+    padding: 15px;
+}
+
+.service .titlepage h1 {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: #FFC107 solid 5px;
+    text-transform: uppercase;
+}
+
+.margin_top40 {
+    margin-top: 40px;
+}
+
+.service_img figure {
+    margin: 0;
+}
+
+.service_img figure img {
+    width: 200px;
+    height: 200px;
+}
+
+.service_text h3 {
+    color: #141414;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.service_text span {
+    border-bottom:  solid 1px;
+    padding-bottom: 4px;
+    color: #141414;
+    font-size: 15px;
+}
+
+
+
+.service_text p {
+    color: #141414;
+    font-size: 17px;
+    line-height: 32px;
+    font-weight: 400;
+    padding-top: 15px;
+    text-align: justify;
+}
+
+/* Soulignement des likes et comment*/
+.social_media .icon{
+   font-size: 17px;
+    margin-left: 10px;
+    padding-bottom: 5px;
+    color: #183661;
+    border-bottom:2px solid#FFC107 ;
+}
+
+.social_media .icon:hover{
+    font-size: 25px;
+    color: #2160b8;
+}
+
+
+.service_text span{
+    border-bottom:4px solid#FFC107;
+    color: #141414;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px; 
+}
+.sectionServ:hover{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+

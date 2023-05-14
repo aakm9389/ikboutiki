@@ -1,0 +1,109 @@
+
+<section id="produit1" class="section-p1" >
+    <h1 style="font-size: 40px;">Pour Enfants</h1>
+    <hr style="border: 1px solid #ffc107;">
+    <div class="pro-container" *ngIf="!vue" >
+
+      <div class="container-wrapper" >
+        <!-- <div class="grid-item" style="flex: 0 0 calc(100% / 3);">
+          <div class="row"> -->
+            <div class="col" *ngFor="let produit of HommeHabit" style="display: inline-block; margin-right: 10px;" >
+                <div class="card" (click)="onDetail(produit)" >
+                    <div class="wrapper">
+                        <!-- cote de mon vue promos -->
+                        <div class="promo-signe">
+                        <p>40% Off</p>
+                        </div>
+                        <!-- cote de mon like -->
+                        <div class="promo-like">
+                            <a class="like" href="#"><i class="fa fa-heart"></i></a>
+                        </div>
+                        <!-- cote de image -->
+                        <div class="image-wrapper">
+                            <img :src={{produit.img}} alt="">
+                        </div>
+                        <!-- cote de nom de l'objets -->
+                    <div class="nom-wrapper">
+            
+                        <div class="left">
+            
+                        <div class="non-para">
+                            <p>{{produit.marque}}</p>
+                        </div>
+                
+                        <div class="non-etoile">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                
+                        <div class="non-prix">
+                            <p>{{produit.prix}}</p>
+                        </div>
+            
+                        </div>
+            
+                        <div class="right">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+            
+                    </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- </div> -->
+      <!-- </div> -->
+    <div *ngIf="Images" >
+      <div class="grid-container" >
+        <div class="grid-item" style="flex: 0 0 calc(100% / 3);">
+          <div class="row">
+            <div class="col" style="justify-content: center; padding-top: 4% ;">
+                <div class="card"  (click)="OnRetour()">
+                    <div class="pro"  style="width: 350px; height: 350px;" >
+                    <img :src={{Images}} style="width: 300px; height: 300px;" alt="pro"> 
+                    <div class="des">
+                    <h5></h5>
+                    </div>
+                    
+                    </div>
+                </div>
+                <div class="right">
+                  <div class="url">{{Mark}}<br></div>
+                  <div class="pname">{{Descrip}}<br></div>
+                  <div class="ratings">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+                  <div class="price">Prix : {{Prixx}}</div>
+                  <div class="size">
+                      <p>Taille :</p>
+                      <div class="psize active"><span>M</span></div>
+                      <div class="psize active">L</div>
+                      <div class="psize">XL</div>
+                      <div class="psize">XXL</div>
+                  </div>
+                  <div class="quantity">
+                      <p>Quantité :</p>
+                      <input type="number" min="1" max="10" value="1">
+                  </div>
+                  <div class="btn-box">
+                      <button class="cart-btn">Ajouter au Panier</button>
+                      <button class="buy-btn">Acheter Maintenant</button>
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+   </section>

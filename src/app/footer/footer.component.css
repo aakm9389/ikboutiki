@@ -1,0 +1,243 @@
+footer{
+    width: 100%;
+    height: 60vh;
+    background-color: #183661;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+
+.footer-left .title {
+    margin-bottom: 20px;
+}
+
+.footer-left .title h3{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.60px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+
+.footer-left .icon-reseau{
+    margin-bottom: 25px;
+}
+
+.footer-left .icon-reseau i.fcb{
+    padding: 10px 12px;
+}
+
+.footer-left .icon-reseau i{
+    background-color: #FFC107;
+    padding: 10px;
+    border-radius: 50%;
+    color: #000;
+    margin-right: 5px;
+}
+
+.footer-left .icon-reseau i:hover {
+    background-color: #d1a11e;
+}
+    
+
+.container-name {
+    display: flex;
+    align-items: center;
+}
+
+.container-name .name-left {
+    margin-right: 30px;
+}
+
+.container-name .name-left ul li a,
+.container-name .name-right ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.container-name .name-left ul li a:hover,
+.container-name .name-right ul li a:hover
+{
+    color: #FFC107;
+    text-decoration: underline;
+}
+
+.container-name .name-left ul,
+.container-name .name-right ul
+{
+    list-style-type: none;
+}
+
+.footer-right {
+    margin-left: 80px;
+}
+
+.footer-right .title h3 {
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.footer-right .title {
+    margin-bottom: 40px;
+}
+
+.formulaire label{
+    color: #fff;
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.formulaire input{
+    width: 380px;
+    height: 45px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 2px solid #FFC107;
+    padding-left: 20px;
+    font-size: 15px; 
+    outline: none;
+    margin-top: 20px;
+    background: transparent;
+    color: #fff;
+}
+
+.formulaire a{
+    background-color: #FFC107;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 12px 20px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: #183661;
+    transition: .3s ;
+}
+
+.formulaire a:hover {
+   background-color: #c59e31;
+   color: #000;
+}
+
+.condition p {
+    margin-top: 100px;
+    font-size: 13px;
+    color: #b6abab;
+}
+
+.condition p a {
+    color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer-container{
+        /* display: grid; */
+        grid-template-columns: none;
+    }
+
+    .footer-right {
+        margin-left: 0px;
+    }
+
+    
+    .container-name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer {
+        height: auto;
+        padding: 30px;
+    }
+
+    .footer-right .title h3 {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+    .formulaire label {
+        font-size: 12px;
+    }
+
+    .formulaire input {
+        width: 300px;
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .formulaire a {
+        font-size: 14px;
+        padding: 12px 15px;
+    }
+
+    .condition p {
+        font-size: 11px;
+    }
+
+    .formulaire {
+        text-align: center;
+    }
+
+    .name-left {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .container-name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+
+    .formulaire input {
+        width: 200px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .formulaire a {
+        font-size: 11px;
+        padding: 12px;
+    }
+
+    .formulaire {
+        text-align: center;
+    }
+
+    .condition p {
+        font-size: 10px;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 410px) {
+    .formulaire input {
+        width: 150px;
+        height: 40px;
+        font-size: 10px;
+    }
+
+    .formulaire a {
+        font-size: 10px;
+        padding: 12.5px 10px;
+        font-weight: bold;
+        margin-left: -5px;
+    }
+}

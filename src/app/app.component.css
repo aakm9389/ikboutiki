@@ -1,0 +1,624 @@
+/* ========================== MON HEADER 01 ==================================================================*/
+
+.header-one {
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000000;
+}
+
+/* ========================== MON TELEPHONE ET MON EMAIL ==============================*/
+
+.contact-tel-mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px;
+}
+
+.contact-tel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-tel i{
+    font-size: 15px;
+}
+
+.contact-tel p{
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.contact-mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.contact-mail p{
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+.contact-mail i {
+    font-size: 15px;
+}
+
+
+/* ========================== MON RESEAU FCB IN ET INSTA ==============================*/
+
+.reseau {
+    margin-right: 250px;
+}
+
+.reseau a{
+    text-decoration: none;
+    color: #183661;
+}
+
+.reseau i{
+    padding: 5px;
+    font-size: 20px;
+}
+
+/* ========================== MON INFORMATION ET SON ICONS ==============================*/
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.info a {
+    color: #183661;
+    font-size: 17px;
+}
+
+.info p{
+    font-size: 17px;
+    padding-right: 8px;
+}
+
+@media screen and (max-width: 991px) {
+    .header-one {
+        display: none;
+    }
+}
+
+
+
+
+
+
+/* ========================== MON HEADER 02 ======================================================================*/
+
+.header-two{
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+    background-color: #183661;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: -1px;
+    
+}
+
+/* ========================== MON LOGO ==============================*/
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+}
+
+.logo span {
+    color: #183661;
+    background-color: #FFC107;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.logo h2 {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 5px;
+    letter-spacing: 1px;
+    padding: 10px 0;
+}
+
+/* ========================== MON RECHERCHE ==============================*/
+
+.search {
+    position: relative;
+    left: 170px;
+}
+
+.search input {
+    width: 400px;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    padding-left: 30px;
+    font-size: 15px;
+    outline: none;
+}
+
+.search i {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.search i:hover {
+    color: #183661;
+    transition: all .3s;
+}
+
+/* ========================== MON CONNEXION ==============================*/
+ 
+.connect {
+    position: relative;
+    left: 100px;
+}
+
+.connect a {
+    text-decoration: none;
+    color: #000;
+    padding: 12px 17px;
+    background-color: #FFC107;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.connect a:hover {
+    background-color: #ffc107ef;
+    transition: all .3s;
+}
+
+/* ========================== MON CONNEXION ==============================*/
+
+.achat-panier-users {
+    margin-right: 20px;
+}
+.achat-panier-users a{
+    color: #183661;
+}
+
+.achat-panier-users a i  {
+    background-color: #DCDCDC;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 6px;
+    cursor: pointer;
+}
+
+
+
+.achat-panier-users i:hover {
+    background-color: #dcdcdce8;
+    transition: all .3s;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+}
+
+.logo span {
+    color: #183661;
+    background-color: #FFC107;
+    font-weight: 600;
+    padding: 12px 8px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+
+
+
+
+
+/* ==========================   MEDIA SCREEN DE 1150 PX  ========================*/
+
+@media screen and (max-width: 1150px) {
+    .search {
+        left: 0;
+    }
+
+    .connect {
+        left: 0;
+    }
+}
+
+
+
+/* ==========================   MEDIA SCREEN DE 991 PX  ==============================*/
+
+
+@media screen and (max-width: 900px) {
+
+    .header-two {
+        z-index: 10;
+        width: 100%;
+        height: auto;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        top: -1px;
+    }
+
+    .search {
+        position: relative;
+        left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+
+    .search input {
+        width: 350px;
+        height: 40px;
+        border: none;
+        border-radius: 0;
+        padding-left: 30px;
+        font-size: 15px;
+        outline: none;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .search i {
+        position: relative;
+        top: 0;
+        right:0;
+        font-size: 22px;
+        cursor: pointer;
+        background-color: #FFC107;
+        padding: 9px 13px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        margin-left: 35px;
+        padding: 15px 0 8px;
+    }
+
+
+
+    .connect {
+        position: absolute;
+        top: 5px;
+        left: 45%;
+        padding: 22px 0;
+    }
+
+    .achat-panier-users {
+        margin-right: 15px;
+        position: absolute;
+        top: -2px;
+        right: 0;
+        padding: 16px 0;
+    }
+
+    .connect a {
+        background: transparent;
+        font-size: 14px;
+        color: #FFC107;
+        padding: 0;
+    }
+
+    .connect a:hover {
+        background: transparent;
+        transition: all .3s;
+        color: #c7980c;
+    }
+
+    .achat-panier-users i {
+        font-size: 12px;
+    }
+
+}
+
+/* ==========================   MEDIA SCREEN DE 500 PX  ==============================*/
+
+@media screen and (max-width: 500px) {
+    .search input {
+        width: 300px;
+    }
+
+    .logo {
+        margin-left: 15px;
+        padding: 12px 0 8px;
+    }
+
+    .logo span {
+        padding: 10px 5px;
+        font-size: 15px;
+    }
+
+    .logo h2 {
+        color: #fff;
+        font-size: 17px;
+        margin-left: 5px;
+        letter-spacing: 1px;
+    }
+
+    .connect {
+        top: 0;
+        left: 40%;
+    }
+
+    .achat-panier-users {
+        margin-right: 10px;
+        top: -1px;
+        right: 0;
+    }
+
+    .achat-panier-users i {
+        padding: 10px;
+        margin: 0 2px;
+    }
+
+    
+}
+
+
+
+
+/* ========================== MON HEADER 03 =====================================================================*/
+
+.header-tree {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #DCDCDC;
+    position: sticky;
+    top: 59px;
+    z-index: 10;
+}
+
+/* ========================== MON CATEGORIES ==============================*/
+
+.categorie-produit {
+    display: flex;
+    align-items: center;
+}
+
+nav.cate {
+    margin-left: 15px;
+    width: 200px;
+    background-color: #FFC107;
+    line-height: 45px;
+    border-radius: 5px;
+    position: relative;
+}
+
+nav.cate:hover {
+    background-color: #e7af04;
+    transition: .3s;
+}
+
+nav.cate ul{
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    left: 0;
+    list-style: none;
+    background-color: #183661;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.034);
+    display: none;
+    cursor: pointer;
+}
+
+[id^=btn]:checked + ul {
+    display: block;
+}
+
+nav.cate ul li {
+    padding-left: 20px;
+    border-bottom: 1px solid #00000018;
+}
+
+nav.cate ul li:hover {
+    background-color: rgba(0,0,0,.5);
+    cursor: pointer;
+}
+
+nav.cate ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+nav.cate input{
+    display: none;
+}
+
+
+.cate label{
+    font-weight: 550;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.cate span {
+    float: right;
+    padding-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ========================== MA MEILLEURES PRODUITS ==============================*/
+
+.categorie-produit .produit {
+    margin-left: 30px;
+}
+
+.categorie-produit .produit a {
+    text-decoration: none;
+    color: #183661;
+    font-size: 15px;
+}
+
+.categorie-produit .produit a:hover {
+    color: #161f2b;
+}
+
+
+
+/* ========================== MA LISTE A PUCE ==============================*/
+
+.header-tree .menu ul{
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.header-tree .menu ul li{
+    padding: 0 15px;
+}
+
+.header-tree .menu ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.header-tree .menu ul li a:hover {
+    color: #183661;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-close {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+    /* .header-tree {
+        display: none;
+    } */
+
+    .nav-toggle {
+        font-size: 30px;
+        margin-right: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 12px 0 8px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .header-tree .menu ul {
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        background-color: #183661;
+        width: 220px;
+        display: block;
+        padding-top: 30px;
+        transition: all 1s ease;
+        border-radius: 10px;
+    }
+
+    .header-tree .menu ul.list {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .header-tree .menu ul.show {
+        left: 0;
+        transition: all 1s ease;
+    }
+
+    .nav-close .show {
+        left: 0;
+    }
+
+    .nav-close {
+        font-size: 30px;
+        position: absolute;
+        right: -70px;
+        top: -15px;
+        cursor: pointer;
+    }
+
+    .nav-close i {
+        background-color: #DCDCDC;
+        border-radius: 50%;
+        padding: 5px 8px;
+    }
+
+    .nav-close i:hover {
+        color: red;
+        transition: all .3s;
+    }
+
+    .header-tree .menu ul li {
+        display: block;
+        padding: 20px 30px;
+    }
+
+    .header-tree .menu ul li a {
+        font-size: 18px;
+        color: #DCDCDC;
+    }
+
+    .header-tree .menu ul li a:hover {
+        color: #FFC107;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    nav.cate {
+        width: 150px;
+        line-height: 40px;
+    }
+
+    nav.cate ul li {
+        padding-left: 10px;
+    }
+
+    nav.cate ul li a {
+        font-size: 13px;
+    }
+    .categorie-produit .produit {
+        margin-left: 10px;
+    }
+    
+    .categorie-produit .produit a {
+        text-decoration: none;
+        color: #183661;
+        font-size: 13px;
+    }
+
+
+}

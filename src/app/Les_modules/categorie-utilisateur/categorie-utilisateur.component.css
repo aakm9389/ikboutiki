@@ -1,0 +1,218 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    font-family : 'Poppins', sans-serif ;
+}
+
+.contGlobal .conttitre{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contGlobal .conttitre{
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: #FFC107 solid 5px;
+    text-transform: uppercase;
+}
+
+
+.btnLogout{
+    margin: auto;
+}
+.titre{
+    padding: 0 10%;
+}
+.titre h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.btnLogout a{
+    color: #183661;
+    font-size: 15px;
+    font-family: 'Poppins';
+    text-decoration: none;
+}
+
+
+/* Responsive du titre Bienvenue sur votre espace personnelle et btn deconnexion*/
+@media (max-width: 900px) {
+    .titre h1{
+        font-size: 18px; 
+        
+    }
+}
+@media (max-width: 724px) {
+    .titre h1{
+        font-size: 15px;     
+    }
+    .titre{
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 724px) {
+    .contGlobal .conttitre{
+        flex-direction: column;
+    }
+
+    .titre h1{
+        font-size: 12px;     
+    }
+}
+
+/* Fin du Responsive du titre Bienvenue sur votre espace personnelle et btn deconnexion*/
+
+
+/*iNFORMATION PERSONNELLE*/
+.informationP{
+    display: flex;
+    padding: 0 5%;
+    align-items:center;
+}
+
+.informationP .ip2{
+    margin-left: 10%;
+    height: 100px;
+    padding-left: 10%;
+    font-size: 12px;
+    border-left: 2px solid #183661;
+}
+.informationP .ip1{
+    margin-left: 10%;
+    padding-left: 10%;
+}
+
+.imgInfo{
+    display: flex;
+    padding: 0;
+    align-items:center;
+   
+}
+.img{
+    width: 70px;
+    font-size: 100px;
+    justify-content: center;
+    color: #183661;
+}
+
+.info{
+    margin-left: 10%;
+    padding-left: 10%;
+    width: 150px;
+    font-size: 10px;
+}
+.info h4{
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+.info p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+/*Responsive information personnelles*/
+@media (max-width: 600px) {
+    .informationP{
+        flex-direction: column;
+    }
+
+    .informationP .ip2{
+       border-top: 2px solid #183661; ;
+        border-left: none;
+    }
+    .informationP .ip2{
+        margin-left: 7%;
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*Mes commandes*/
+.contCommande{
+    display: flex;
+    padding: 2% 5%;
+    align-items:center;
+}
+
+.titreCommande{
+    padding-left: 0;
+    margin-right: 5%;
+    width:200px;
+    text-align: center;
+    color:#183661;
+
+}
+.contenuCommande{
+
+    background-color:#012b661c;
+    padding-top:40px;
+    width: 100%;
+    height: 80px;
+    align-items:center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.contenuCommande p{
+  text-align: center;
+  align-items: center;
+}
+
+.titreCommande h3{
+    text-align: center;
+    font-family: 'Poppins'sans-serif;
+}
+.titreCommande li{
+    padding: 0;
+    margin: 0;
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 1050px) {
+    .titreCommande h3{
+       font-size: 18px;
+    }
+}
+
+@media (max-width: 850px) {
+    .titreCommande h3{
+       font-size: 16px;
+    }
+}
+
+@media (max-width: 750px) {
+    .titreCommande h3{
+       font-size: 14px;
+    }
+    .contenuCommande p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 550px) {
+    .titreCommande h3{
+       font-size: 12px;
+    }
+    .contCommande{
+       flex-direction: column;
+       margin-bottom: 15px;
+    }
+    .contenuCommande p{
+        font-size: 10px;
+    }
+}
